@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+/* COMMON STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h3 {
+    font-family: 'Aladin', cursive;
+    text-align: center;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+.navbar-brand {
+    font-size: 48px;
+}
+
+.jumbotron {
+    height: 100vh;
+    background-image: url("seating2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-grey {
+    padding-top: 2rem;
+    background-color: #F2F2F2;
+}
+
+.container-fluid {
+    padding: 3rem;
+}
+
+.container-fluid:before {
+    height: 40px;
+    content: "";
+    display:block;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+button, .submit-button {
+    background-color: #EDAC60;
+    border-radius: 75px;
+    border: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    font-family: 'Lato';
+    margin: 0.5rem;
+}
+
+.btn-group-vertical {
+    align-items: center;
+}
+
+
+button:hover, .submit-button:hover {
+    cursor: pointer;
+    background-color: #dc831e;
+}
+
+.form-control {
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+
+.menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #3c3c3c;
+    text-decoration: underline;
+}
+
+/* XL DESKTOP */ 
+@media (min-width: 2400px) { 
+    .container-fluid {
+        max-width: 60%;
+    }
+
+    h1 {
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* TABLET & LAPTOP */
+@media (min-width: 768px) {
+    
+    .nav-link {
+        font-size: 36px;
+        margin-left: 2rem;
+    } 
+
+    .navbar {
+        font-family: 'Aladin', cursive;
+        height: 5rem;
+        background-color: white;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h1.heng-title {
+        font-family: 'Aladin', cursive;
+        font-size: 128px;
+        margin: -2rem;
+    }
+    
+    h2.heng-title {
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        margin-bottom: 2rem;
+    }
+
+    .box-content {
+        padding-top: 5em;
+        margin: auto;
+    }
+
+    .box-overlay {
+        position: relative;
+        width: 40rem;
+        height: 40rem;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    p {
+        line-height: 50px;
+        font-size: 32px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #menus-label {
+        font-size: 60px;
+    }
+}
+
+/* TABLET ONLY */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .navbar {
+        font-family: 'Aladin', cursive;
+        height: 5rem;
+        background-color: white;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2.heng-title {
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+    }
+
+    .btn-group-vertical {
+        width: 100%;
+    }
+
+    p {
+        line-height: 40px;
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+
+/* PHONE ONLY  */
+@media (max-width: 767px) {
+
+    .navbar {
+        font-family: 'Aladin', cursive;
+        color: black;
+        background-color: white;
+        max-width: 100%;
+    }
+    .nav-link {
+        font-size: 24px;
+    }
+
+    .menu-img {
+        padding-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h1.heng-title {
+        font-family: 'Aladin', cursive;
+        font-size: 100px;
+        margin: -1rem;
+    }
+    
+    h2.heng-title {
+        font-family: 'Aladin', cursive;
+        font-size: 40px;
+    }
+
+    .box-content {
+        align-content: center;
+        justify-items: center;
+        padding-top: 2em;
+    }
+
+    .box-overlay {
+        position: relative;
+        width: 20rem;
+        height: 28rem;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    p {
+        line-height: 30px;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .row {
+        display: block;
+    }
+
+}
+
+
+/* GALLERY CAROUSEL CONTROLS  */
+
+.carousel-indicators > li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    bottom: -10px;
+}
+
+.carousel-item > img {
+    border: 4px solid #EDAC60;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
